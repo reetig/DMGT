@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discrete Math Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="quiz-container">
+        <div class="sidebar">
+            <div class="sections">
+                <button>Section 1</button>
+                <button>Section 2</button>
+                <button>Section 3</button>
+                <button class="flagged">Flagged</button>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <div class="timer">
+                <span id="time-left">03:00</span>
+            </div>
+            <div class="question-container">
+                <h2 id="question-number">Question 1</h2>
+                <p id="question-text">Question text will appear here.</p>
+                <div class="options">
+                    <button class="option" onclick="selectOption(0)">Option A</button>
+                    <button class="option" onclick="selectOption(1)">Option B</button>
+                    <button class="option" onclick="selectOption(2)">Option C</button>
+                    <button class="option" onclick="selectOption(3)">Option D</button>
+                </div>
+            </div>
+            <div class="navigation">
+                <button onclick="previousQuestion()">← Previous</button>
+                <button onclick="nextQuestion()">Next →</button>
+            </div>
+        </div>
+
+        <div class="question-nav">
+            <!-- Dynamically generated question numbers go here -->
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
